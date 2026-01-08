@@ -12,6 +12,7 @@ It showcases :-
 -The goal was to understand how cloud storage platforms work at a backend level, not just replicate UI.
 
 # Core Features
+
 - File upload using server-side middleware
 - Secure file storage on disk
 - File listing & management
@@ -20,6 +21,7 @@ It showcases :-
 - Clean project structure suitable for scaling
 
 # System Architecture
+
 Client (Browser)
    ↓
 EJS Views (Server-Rendered UI)
@@ -36,7 +38,8 @@ Clear responsibility separation
 Easy debugging and maintenance
 Readiness for database & auth integration
 
-📁 Project Structure (Explained)
+📁 Project Structure 
+
 google-drive-clone/
 │
 ├── config/          # Application & environment configuration
@@ -55,6 +58,7 @@ google-drive-clone/
 └── README.md
 
 🔑 Key Files Explained
+
 app.js
 Initializes Express server
 Registers middleware
@@ -64,7 +68,7 @@ Starts HTTP server
 This file acts as the application backbone.
 
 📦 Tech Stack
-Technology
+
 Node.js -Backend runtime
 Express.js - Web server & routing
 EJS	Server - side templating
@@ -73,6 +77,7 @@ File System (FS) - Storage engine
 Nodemon -	Development productivity
 
 ⚙️ How File Upload Works
+
 - User submits file via HTML form
 - Request hits Express route
 - Multer middleware:
@@ -83,6 +88,7 @@ Nodemon -	Development productivity
 This mimics cloud storage ingestion pipelines at a basic level.
 
 🚀 How to Run Locally
+
 npm install
 npm start
 
@@ -90,12 +96,14 @@ Server runs on:
 http://localhost:3000
 
 🔒 Security Considerations Implemented
+
 Controlled upload directory
 Middleware-based file handling
 No direct client filesystem access
 Server-side rendering (reduced XSS surface)
 
 🧪 Engineering Decisions
+
 Why EJS instead of React?
 → To focus on backend logic and server-side rendering fundamentals.
 
@@ -106,6 +114,7 @@ Why modular routing?
 → Enables easy scaling into microservices or REST APIs.
 
 📈 Future Enhancements
+
 🔐 User authentication & authorization
 ☁️ Cloud storage (AWS S3 / GCP)
 🗃️ Database integration (MongoDB)
@@ -114,6 +123,7 @@ Why modular routing?
 📊 Upload analytics
 
 💼 Skills Demonstrated 
+
 ✔ Backend system design
 ✔ Node.js & Express proficiency
 ✔ Middleware & file handling
@@ -122,5 +132,6 @@ Why modular routing?
 ✔ Readable & maintainable code
 
 👨‍💻 Author
+
 Aditya Borse
 🔗 GitHub: https://github.com/Adityazz8
