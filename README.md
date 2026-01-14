@@ -45,53 +45,6 @@ Before running this application, make sure you have:
 - [MongoDB Atlas](https://www.mongodb.com/atlas) account (free tier available)
 - [Cloudinary](https://cloudinary.com/) account (free tier available)
 
-## 🚀 Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Adityazz8/google-drive-clone.git
-   cd google-drive-clone
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Environment Setup**
-
-   Copy the example environment file and configure your credentials:
-
-   ```bash
-   cp .env.example .env
-   ```
-
-   Edit `.env` with your actual credentials:
-
-   ```env
-   # MongoDB Atlas Connection String
-   MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/dbname
-
-   # JWT Secret Key (use a strong, random string)
-   JWT_SECRET=your_super_secret_jwt_key_here
-
-   # Cloudinary Credentials
-   CLOUDINARY_CLOUD_NAME=your_cloud_name
-   CLOUDINARY_API_KEY=your_api_key
-   CLOUDINARY_API_SECRET=your_api_secret
-   ```
-
-   > 📖 **Detailed Setup Guide**: See [SETUP_GUIDE.md](SETUP_GUIDE.md) for step-by-step instructions on setting up MongoDB Atlas and Cloudinary.
-
-4. **Start the application**
-   ```bash
-   npm start
-   ```
-
-5. **Access the application**
-
-   Open your browser and navigate to: `http://localhost:3000`
-
 ## 📖 Usage
 
 ### User Registration
@@ -157,18 +110,6 @@ google-drive-clone/
 - `GET /login` - Redirect to login page
 - `GET /register` - Redirect to registration page
 
-## 🔧 Development
-
-### Available Scripts
-
-```bash
-# Start development server with auto-reload
-npm start
-
-# Run tests (when implemented)
-npm test
-```
-
 ### Code Quality
 
 - Uses ESLint for code linting (configure as needed)
@@ -203,53 +144,7 @@ For detailed troubleshooting steps, see [SETUP_GUIDE.md](SETUP_GUIDE.md).
 | MongoDB Atlas | 512 MB | - | - |
 | Cloudinary | 25 GB | 25 GB/month | 100 MB |
 
-## 🚀 Deployment
-
-### Heroku Deployment
-1. Create a Heroku app
-2. Set environment variables in Heroku dashboard
-3. Deploy using Heroku Git or connect to GitHub
-
-### Railway Deployment
-1. Connect your GitHub repository
-2. Set environment variables
-3. Deploy automatically
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-name`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin feature-name`
-5. Open a Pull Request
-
-### Development Guidelines
-- Follow existing code style
-- Add tests for new features
-- Update documentation as needed
-- Ensure all tests pass
 
 ## 📄 License
 
 This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [MongoDB Atlas](https://www.mongodb.com/atlas) for database hosting
-- [Cloudinary](https://cloudinary.com/) for cloud storage
-- [Express.js](https://expressjs.com/) for the web framework
-- [EJS](https://ejs.co/) for templating
-
-## 📞 Support
-
-If you encounter any issues or have questions:
-
-1. Check the [SETUP_GUIDE.md](SETUP_GUIDE.md) for detailed setup instructions
-2. Review existing [GitHub Issues](https://github.com/Adityazz8/google-drive-clone/issues)
-3. Create a new issue with detailed information about your problem
-
----
-
-**Happy coding! 🎉**
